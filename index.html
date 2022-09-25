@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+
+<header>Aply for Renting</header>
+
+    <div class="box" id="distance">
+      <label for="distance"><h3>Choose your distance to go (in km)</h3><span id="km"></span>
+        <br></label>
+      <input type="range" min="50" max="1500" value="500"  id="range">
+      <br>
+      <button class="button" id="chenge" onclick="Chengetonumber()" >Chenge to Numeric Field(for precision)</button>
+      <br>
+    </div>
+    <div class="box" >
+            Year of getting driving license :<br> <input  type="number" min="2018" step="1" id="DL">
+    </div>
+
+    <div id="box">
+            <label for="Firstday" ><h3>First Day</h3></label> <input type="date" id="Firstday">
+    </div>
+    <div id="box">
+            <label   for="Lastday"><h3>Last Day</h3></label> <input type="date" id= "Lastday">
+    </div>
+
+    <div class="box">
+        <h2>Choose car class</h2>
+      <select id="List">
+        <option value="1" >Basic available: <p id="basic amount">20</p></option>
+        <option value="2">Standard available: <p id="Standard amount">18</p></option>
+        <option value="3">Medium available: <p id="Medium amount">2</p></option>
+        <option value="4">Premium available: <p id="Premium amount">6</p></option>
+      </select><br>
+      <span id="Warning_DL_under3"></span>
+    </div>
+    <div class="box">
+      <br> <input type="submit" onclick="TheFunction()" value="Submit!" id="submit" class="button">
+    </div>
+    <br><br>
+    <div id="Result"></div>
+  </div>
+    </div>
+
+
+<script src="script.js"></script>
+  </body>
+</html>
+
